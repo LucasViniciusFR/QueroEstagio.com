@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+      
+    <style>
+      
+        div#conteudo{
+            height: 100%;
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 1px 4px 10px rgba(0,0,0,.4);
+        }
+        
+        div#vagascontainer{
+            display:block;
+            float: left;
+            width: 40%;
+            margin-left: 8%;
+            margin-top: 1%;
+        }
+        
+        div#vagascontainer2{
+            display:block;
+            float: right;
+            width: 40%;
+            margin-right: 8%;
+            margin-top: 1%;
+        }
+        
+        .card{
+            margin-top:3%;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block;
+            width: 100%;
+            box-shadow: 1px 4px 10px rgba(0,0,0,.4);
+        }
+        
+        .card-title{
+            width: 100%;
+            background-color: #020127;
+            color: #12DE38;
+            padding: 2%;
+        }
+        
+        .modal-title{
+             width: 100%;
+            background-color: #020127;
+            color: #12DE38;
+            padding: 2%;
+        }
+        .btn{
+            display:block;
+            float: right;
+            background-color: #020127;
+            color: white;
+        }
+        
+        
+        
+      </style>  
+        
+      
+      
+    <style>    
+        
+       div#conteudo{
+            margin-top: 1%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 900px;
+            box-shadow: 1px 4px 10px rgba(0,0,0,.4);        
+        }
+        
+        div#lateral{
+            display: block;
+            float: left;
+            width: 20%;
+            height: 900px;
+            position : relative;
+            background-color: #020127;
+            border-right: 2px solid #12DE38;
+        }
+        
+        div#lateral img{
+            margin-left: 18%;
+            height: 60%;
+            width: 60%;
+        
+        }
+        
+        div#lateral nav#menuEsq{
+            margin-top: 10%;
+        }
+        
+        nav#menuEsq a{
+            color: white;
+            text-decoration: none;
+        }
+        
+        div#centro{
+            display: block;
+            float: right;
+            position: relative;
+            width: 80%;
+            height: 900px;
+        }
+        
+        div#centro header#cabecalhoC{
+            background-color: rgba(0,0,0,.2);
+            height: 10%;
+            margin-bottom: 3%;
+        }
+        
+        
+        div#lateral h4{
+            color: #12DE38;
+            font-size: 13pt;
+            margin-left: 5%;
+            border-bottom: 1px solid #12DE38;
+            width: 50%;
+            padding-bottom: 2%;
+        }
+        
+        div#notificacoes{
+            background-color:  #020127;
+            color: white;    
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            border: 2px solid black;
+            text-align: center;
+            margin-bottom: 3%;
+        }
+        
+        div#notificacoes p{
+            color:  #12DE38;   
+            
+        }
+        
+         div#dados{
+            border-top: 2px solid rgba(0,0,0,.2);
+            margin-left: 2%;
+            margin-bottom: 3%;
+            margin-top: 20%;
+        }
+        
+         div#vagas{
+            margin-left: 2%;
+            margin-top: 5%;
+        }
+        
+        div#carrosel{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 5%;
+            box-shadow: 1px 4px 10px rgba(0,0,0,.4);
+        }
+        
+      </style>  
+     <link rel="stylesheet" type = "text/css" href="_css/interface.css"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+       
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>QueroEstágio.com</title>
+
+
+
+	
+    
+  </head>
+  <body id = "pagina">
+      
+    <header>  
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color" id = "cabecalho">
+
+    <a class="navbar-brand" href="home.html"><img src = "_imagens/lupa.png"/><h1>ueroEstágio.com</h1></a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto" id = "lista">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logincandidato.html">Estudante</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loginempresa.html">Empresa</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="contato.html">Fale Conosco</a>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline">
+            <div class="md-form mt-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
+            </div>
+        </form>
+     </div>
+    </nav>
+</header>
+
+<div class="modal fade" id="modalcard1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informações</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p><label style="font-weight: bold">Empresa:</label> CONFIDENCIAL</p>
+               <p><label style="font-weight: bold"> Nível:</label>	Superior</p>
+               <p><label style="font-weight: bold">Cursos:</label>	Administração, Ciências Contábeis, Administração - EAD</p>
+               <p> <label style="font-weight: bold">Valor da bolsa:</label>	R$ 987,00</p>
+                <p><label style="font-weight: bold">Cidade:</label>	Manaus</p>
+                <p><label style="font-weight: bold">Estado:</label>	Amazonas</p>
+                <p><label style="font-weight: bold">Requisito:</label>	Entre o 2º e o 7º período</p>
+                <p><label style="font-weight: bold">Período:</label>	Matutino e Vespertino - 6 horas diárias</p>
+                <p><label style="font-weight: bold">Atividades a serem desenvolvidas:</label>	Auxilio nos processos admissionais, auxilio no apontamento de folha de pagamento, auxilio no controle de ponto e benefícios, auxilio nas contas a pagar e receber.</p>
+                <p><label style="font-weight: bold">Benefícios:</label>	Auxilio transporte, vale alimentação, bonificação, cesta básica e seguro de vida.</p>
+                <p><label style="font-weight: bold">Quantidade de vagas:</label>	7</p>
+                <p><label style="font-weight: bold">Necessário experiência:</label>	Sim</p>
+                <p><label style="font-weight: bold">Informações adicionais:</label>	Necessário experiência na área e conhecimentos em Excel.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>         
+      
+      
+      
+      
+      <section id = "corpo">
+        <div id = "conteudo">
+            <div id = "lateral">
+                <nav id = "menuEsq">
+                    <h2 style="color: white; text-align: center; font-size: 16pt; color : #12DE38; padding-top: 5%;">Área da Empresa</h2><br/>
+                    <img src = "_imagens/businessman.png"/>
+                    <p style = "color: white ; text-align: center"><span style="font-weight: bold">Bem-Vindo!</span><br/>QueroEstágio.com</p>
+                    <h4><a href = "empresaPrincipal.html" target="_top" id = "centro">Inicio</a></h4>
+                    <h4>Seus Dados</h4>
+                    <ul>
+                        
+                        <a href = "empresaAlterar.html">Alterar Dados</a><br/>
+                        <a href = "empresaEditarP.html">Editar Perfil</a>
+                                   
+                    </ul>
+                    <h4>Documentação</h4>
+                    <p style="color: darkgray; margin-left: 5%;margin-right: 5%; text-align:none">Você não possui nenhum contrato ativo, portanto não há documentações.</p>
+                    <h4><a href = "empresaEstagios.html">Estágios</a></h4>
+                <a href = "empresaNovoEstagio.html" style = "margin-left: 2%;"> +Novo Estágio!</a><br/>    
+                    
+                </nav>          
+</div>
+            
+            
+    <div id = "centro">
+        <header id = "cabecalhoC">
+                    <h3 style="display: block; float: left; border-right: 2px solid black; width: 15%; margin-left: 2%; height: 90%; margin-top: 0.5%; margin-bottom: auto; text-align: center; padding-top: 1%; font-size: 25pt;" >
+                        Estágios</h3> 
+         </header>
+          
+        <div id = "vagascontainer">
+            <p><span style="font-weight: bold">Total de estágios anunciados:</span><span style = "color : green;">  1</span></p> 
+            <div class="card">
+                  <div class="view overlay">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                  <div class="card-body">
+                    <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
+                    <h4 class="card-title">Adminstração</h4>
+                    <hr>
+                    <p class="card-text"><span style = "font-weight: bold">BOLSA:</span> R$ 505,00</p>
+                    <p class="card-text"><span style = "font-weight: bold">LOCAL:</span> São Lázaro</p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modalcard1">
+                    Informações
+                    </button>
+                    <a class="btn" href = "estagiosituacao.html" style="background-color: green; margin-right: 1%;">
+                    Situação
+                    </a>  
+                      
+                  </div>
+                </div>
+            
+            
+                    
+    
+            </div>
+                
+                    <!--Carousel Wrapper-->
+        
+            
+        </div>
+
+    </div>     
+    </section>
+      
+      
+      
+      
+  
+      
+    <footer class="page-footer font-small stylish-color-dark pt-4 mt-4" id = "rodape">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+      
+              <!-- Footer links -->
+              <div class="row text-center text-md-left mt-3 pb-3">
+      
+                  <!--First column-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">QueroEstágio.com</h6>
+                      <p>Facilitando a sua comunicação com as melhores empresas!</p>
+                  </div>
+                  <!--/.First column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Fourth column-->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+                      <p><i class="fa fa-home mr-3"></i> Manaus-AM, AM, BR</p>
+                      <p><i class="fa fa-envelope mr-3"></i> queroestagio@gmail.com</p>
+                      <p><i class="fa fa-phone mr-3"></i> + 55 92 981429901</p>
+                      <p><i class="fa fa-print mr-3"></i> + 55 92 982499103</p>
+                  </div>
+                  <!--/.Fourth column-->
+      
+              </div>
+              <!-- Footer links -->
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+                  <div class="col-md-8 col-lg-8">
+                      <p class="text-center text-md-left grey-text">© 2018 Copyright: <a href="#"><strong> QueroEstágio.com</strong></a></p>
+                
+                  </div>
+                  <!--Grid column-->
+      
+                  <!--Grid column-->
+                  <div class="col-md-4 col-lg-4 ml-lg-0">
+      
+                      <!--Social buttons-->
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                      </div>
+                      <!--/.Social buttons-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+              </div>
+      
+          </div>
+      
+      </footer>
+      
+      
+      
+
+      
+      <!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
